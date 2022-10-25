@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>External module</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Типо карта</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
 </head>
 <body>
     <div class="nav-panel">
@@ -21,8 +21,8 @@
         <label class="name">Ну типо карта</label>
     </div>
     <canvas id="map"></canvas>
-    <script src="scripts/controls.js"></script>
-    <script src="scripts/canvas.js"></script>
+    <script src="{{ url_for('static',filename='scripts/controls.js') }}"></script>
+    <script src="{{ url_for('static',filename='scripts/canvas.js') }}"></script>
     <script>fillCanvas()</script>
 </body>
 </html>
