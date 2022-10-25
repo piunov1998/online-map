@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External module</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="nav-panel">
+        <table class="navigation">
+            <tr>
+                <th><button onclick="zoomOut()">-</button></th>
+                <th><button onclick="moveUp()">🢁</button></th>
+                <th><button onclick="zoomIn()">+</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="moveLeft()">🢀</button></th>
+                <th><button onclick="moveDown()">🢃</button></th>
+                <th><button onclick="moveRight()">🢂</button></th>
+            </tr>
+        </table>
+        <label class="name">Ну типо карта</label>
+    </div>
+    <canvas id="map"></canvas>
+    <script src="scripts/controls.js"></script>
+    <script src="scripts/canvas.js"></script>
+    <script>fillCanvas()</script>
+</body>
+</html>
