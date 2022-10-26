@@ -30,6 +30,7 @@ function fillCanvas() {
     for (let x = pos_x; x < pos_x + size.x; x++) {
         for (let y = pos_y; y < pos_y + size.y; y++) {
             let tile = new Image()
+            tile.crossOrigin = "anonymous"
             tile.src = urlTile(x, y, zoom)
             tile.onload = function () {
                 console.log(tile, (x - pos_x) * tile_size, (y - pos_y) * tile_size)
