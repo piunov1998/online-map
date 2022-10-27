@@ -13,32 +13,32 @@ function zoomOut() {
     pos_x = Math.ceil(pos_x / 2) - Math.floor(findSizeInTiles().x / 2)
     pos_y = Math.ceil(pos_y / 2) - Math.floor(findSizeInTiles().y / 2)
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
 function zoomIn() {
     zoom += 1
     pos_x = pos_x * 2 + Math.floor(findSizeInTiles().x / 2)
     pos_y = pos_y * 2 + Math.floor(findSizeInTiles().y / 2)
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
 function moveLeft() {
     pos_x -= 1
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
 function moveRight() {
     pos_x += 1
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
 function moveUp() {
     pos_y -= 1
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
 function moveDown() {
     pos_y += 1
     check_xyz()
-    fillCanvas()
+    renderMap()
 }
